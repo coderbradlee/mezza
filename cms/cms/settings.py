@@ -200,6 +200,9 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
             os.path.join(PROJECT_ROOT, "moderna/templates"),
+            os.path.join(PROJECT_ROOT, "flat/templates"),
+            os.path.join(PROJECT_ROOT, "nova/templates"),
+            os.path.join(PROJECT_ROOT, "solid/templates"),
             os.path.join(PROJECT_ROOT, "templates")
         ],
         "APP_DIRS": True,
