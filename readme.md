@@ -48,6 +48,10 @@ Now you can start customizing Moderna theme via base.html and index.html files i
 
 python manage.py collectstatic
 
-
+运行哪个模板就在最上面
+os.path.join(PROJECT_ROOT, "moderna/templates"),
+os.path.join(PROJECT_ROOT, "flat/templates"),
+os.path.join(PROJECT_ROOT, "nova/templates"),
+os.path.join(PROJECT_ROOT, "solid/templates"),
 
 python manage.py runserver 0.0.0.0:80
