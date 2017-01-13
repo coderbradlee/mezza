@@ -4,8 +4,8 @@
 DEBUG = True
 
 # Make these unique, and don't share it with anybody.
-SECRET_KEY = "c*s1-9p-4#j=90t90ga2ob#&8+ki4#c^luz%dx1rwt#-czq8u6"
-NEVERCACHE_KEY = "0n-esgl@xyl^8w_*6*sw^7oj-6cfps8ysc#&!w&&*xh_ovpey7"
+SECRET_KEY = "rj@h!oy3x(o!7x!wx1=kq#%i!7bllsc43d&u@7!#z=#i1d@n3k"
+NEVERCACHE_KEY = "vq16legxh2)7#c3s9px$y#k)#p1*!=uk42h1*3ccgk7ovz@sa@"
 
 DATABASES = {
     "default": {
