@@ -199,9 +199,9 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(PROJECT_ROOT, "moderna/templates"),
-            os.path.join(PROJECT_ROOT, "flat/templates"),
-            os.path.join(PROJECT_ROOT, "nova/templates"),
+            #os.path.join(PROJECT_ROOT, "moderna/templates"),
+            #os.path.join(PROJECT_ROOT, "flat/templates"),
+            #os.path.join(PROJECT_ROOT, "nova/templates"),
             os.path.join(PROJECT_ROOT, "solid/templates"),
             os.path.join(PROJECT_ROOT, "templates")
         ],
@@ -235,7 +235,10 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
-    "moderna",
+    "solid",
+    #"nova",	
+    #"flat",
+    #"moderna",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
