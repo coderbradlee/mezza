@@ -113,7 +113,7 @@ LANGUAGE_CODE = "en"
 # Supported languages
 LANGUAGES = (
     ('en', _('English')),
-    ('zh_hans', _('中文')),
+    ('zh_cn', _('中文')),
 )
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
