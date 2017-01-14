@@ -7,7 +7,9 @@ TEMPLATE_DEBUG = DEBUG
 IS_BAE_ENV = False
 
 UPLOAD_LOCATION = '/static/upload/'
-
+PROJECT_APP_PATH = os.path.dirname(os.path.abspath(__file__))
+PROJECT_APP = os.path.basename(PROJECT_APP_PATH)
+PROJECT_ROOT = BASE_DIR = os.path.dirname(PROJECT_APP_PATH)
 
 #是否记录日志启动logging
 LOGGING = False
