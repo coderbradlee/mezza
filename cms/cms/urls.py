@@ -38,7 +38,7 @@ urlpatterns += [
     # one out.
 
     ######url("^$", direct_to_template, {"template": "index.html"}, name="home"),
-    url("^$", direct_to_template, {"html5boilerplate/templates": "index.html"}, name="home"),
+    url("^$", direct_to_template, {"templates": "index.html"}, name="home"),
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
     # This pattern gives us a normal ``Page`` object, so that your
