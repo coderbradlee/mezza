@@ -63,5 +63,10 @@ cd bbs
 python manage.py createdb --noinput
 python manage.py runserver 0.0.0.0:80
 
+Run pip install mezzanine-slides
+In settings.py add mezzanine_slides to your INSTALLED_APPS above mezzanine apps.
+Run createdb or syncdb, if running syncdb run migrate if you are using South.
+Modify your base.html template as described below.
+
 
 
