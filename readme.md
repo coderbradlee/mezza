@@ -68,5 +68,7 @@ In settings.py add mezzanine_slides to your INSTALLED_APPS above mezzanine apps.
 Run createdb or syncdb, if running syncdb run migrate if you are using South.
 Modify your base.html template as described below.
 
+pip install south for mezzanine-slides
+
 
 
