@@ -59,9 +59,9 @@ python manage.py runserver 0.0.0.0:80
 
 pip install -U drum
 mezzanine-project -a drum bbs
-$ cd project_name
-$ python manage.py createdb --noinput
-$ python manage.py runserver
+cd bbs
+python manage.py createdb --noinput
+python manage.py runserver 0.0.0.0:80
 
 
 

@@ -199,6 +199,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
+            os.path.join(PROJECT_ROOT, "html5boilerplate/templates"),
             #os.path.join(PROJECT_ROOT, "moderna/templates"),
             #os.path.join(PROJECT_ROOT, "flat/templates"),
             #os.path.join(PROJECT_ROOT, "nova/templates"),
@@ -235,7 +236,8 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
-	"solid",
+	"html5boilerplate",
+    #"solid",
     #"nova",	
     #"flat",
     #"moderna",
