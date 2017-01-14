@@ -55,3 +55,13 @@ os.path.join(PROJECT_ROOT, "nova/templates"),
 os.path.join(PROJECT_ROOT, "solid/templates"),
 
 python manage.py runserver 0.0.0.0:80
+
+
+pip install -U drum
+mezzanine-project -a drum bbs
+$ cd project_name
+$ python manage.py createdb --noinput
+$ python manage.py runserver
+
+
+
