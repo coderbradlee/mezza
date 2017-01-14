@@ -35,17 +35,32 @@ MANAGERS = ADMINS
 MYNET_PAGE_SIZE=15
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'company', 
-        'USER': 'root',
-        'PASSWORD': 'password',    
-        'HOST': 'localhost',                   
-        'PORT': '3308',                      
+    "default": {
+        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+        "ENGINE": "django.db.backends.",
+        # DB name or path to database file if using sqlite3.
+        "NAME": "",
+        # Not used with sqlite3.
+        "USER": "",
+        # Not used with sqlite3.
+        "PASSWORD": "",
+        # Set to empty string for localhost. Not used with sqlite3.
+        "HOST": "",
+        # Set to empty string for default. Not used with sqlite3.
+        "PORT": "",
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', 
+#         'NAME': 'company', 
+#         'USER': 'root',
+#         'PASSWORD': 'password',    
+#         'HOST': 'localhost',                   
+#         'PORT': '3308',                      
+#     }
+# }
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
@@ -90,7 +105,7 @@ MEDIA_URL = ''
 # Example: "/home/media/media.lawrence.com/static/"
 
 
-STATIC_ROOT = 'D:\\Work\\company\\1\\static'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("/"))
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
