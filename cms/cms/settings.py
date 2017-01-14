@@ -199,8 +199,8 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(PROJECT_ROOT, "html5boilerplate/templates"),
-            #os.path.join(PROJECT_ROOT, "moderna/templates"),
+            # os.path.join(PROJECT_ROOT, "html5boilerplate/templates"),
+            os.path.join(PROJECT_ROOT, "moderna/templates"),
             #os.path.join(PROJECT_ROOT, "flat/templates"),
             #os.path.join(PROJECT_ROOT, "nova/templates"),
             os.path.join(PROJECT_ROOT, "solid/templates"),
@@ -236,11 +236,11 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
-	"html5boilerplate",
+	# "html5boilerplate",
     #"solid",
     #"nova",	
     #"flat",
-    #"moderna",
+    "moderna",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -261,7 +261,7 @@ INSTALLED_APPS = (
     # "mezzanine.accounts",
     # "mezzanine.mobile",
 )
-THEME="mezzanine_html5boilerplate"
+# THEME="mezzanine_html5boilerplate"
 # List of middleware classes to use. Order is important; in the request phase,
 # these middleware classes will be applied in the order given, and in the
 # response phase the middleware will be applied in reverse order.
